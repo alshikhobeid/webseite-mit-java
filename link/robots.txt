@@ -1,0 +1,41 @@
+# (root-Ebene ... da wo die index.html liegt)
+	# (muss nicht in html-Datei eingebunden werden)
+	
+	# Alles zulassen:
+	User-agent:*
+	Disallow:
+		
+	# Alles verbieten:
+	User-agent:*
+	Disallow:/
+	
+	# Bestimmte Ordner/Seiten sperren:
+	User-agent:*
+	Disallow:/geheim/
+	Disallow:/img/
+	Disallow:/fotos/hochzeitschulze.html
+	
+	# --------------------------------------------------------------
+	# Fotos in Google-Img-Suche -----------------------------------
+	User-Agent: Googlebot-Image
+	Disallow: /images/dogs.jpg 
+
+	User-Agent: Googlebot-Image
+	Disallow: / 
+
+	User-Agent: Googlebot-Image
+	Disallow: /*.gif$
+	# "*" eine beliebige Zeichenfolge anzugeben, oder ein 
+	# "$" am Ende einer Zeichenfolge, um das Ende eines Namens anzuzeigen.
+
+	
+	Seite testen:
+	http://seorch.de/pro.html
+	https://www.seobility.net/de/seocheck/
+	https://seo-summary.de/seo-tools-kostenlos/
+    
+    Testseiten - Google
+    https://googleseo.de/
+    http://developers.google.com
+	Webmastertools Google (Google Search Console)
+	site:domain.de
